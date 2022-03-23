@@ -3,6 +3,12 @@
     "license": "proprietary",
     "minimum-stability": "stable",
     "prefer-stable": true,
+    "repositories": [
+      {
+        "type": "git",
+        "url": "https://github.com/Jayfrown/ldap.git"
+      }
+    ],
     "require": {
         "php": ">=8.0.2",
         "ext-ctype": "*",
@@ -24,7 +30,7 @@
         "symfony/framework-bundle": "6.0.*",
         "symfony/http-client": "6.0.*",
         "symfony/intl": "6.0.*",
-        "symfony/ldap": "6.0.*",
+        "symfony/ldap": "dev-ldap-server-unavailable",
         "symfony/mailer": "6.0.*",
         "symfony/mime": "6.0.*",
         "symfony/monolog-bundle": "^3.0",
