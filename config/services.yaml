@@ -22,3 +22,14 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+    Symfony\Component\Ldap\Ldap:
+        arguments: ['@Symfony\Component\Ldap\Adapter\ExtLdap\Adapter']
+        tags: ['ldap']
+    Symfony\Component\Ldap\Adapter\ExtLdap\Adapter:
+        arguments:
+            - host: '%env(resolve:LDAP_HOST)%'
+              port: '%env(resolve:LDAP_PORT)%'
+              encryption: '%env(resolve:LDAP_ENCRYPTION)%'
+              options:
+                  protocol_version: 3
+                  referrals: false
