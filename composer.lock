@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6773a1d1d86bc66d368844c83d0cb34e",
+    "content-hash": "fc5f9a66907e7cf17a30ba0ee9d414ce",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -4213,21 +4213,15 @@
         },
         {
             "name": "symfony/ldap",
-            "version": "v6.0.5",
+            "version": "dev-ldap-server-unavailable",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/ldap.git",
-                "reference": "5a2d3222b9b6ea8f717eaa6f4dd5a1a032c1a1f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ldap/zipball/5a2d3222b9b6ea8f717eaa6f4dd5a1a032c1a1f1",
-                "reference": "5a2d3222b9b6ea8f717eaa6f4dd5a1a032c1a1f1",
-                "shasum": ""
+                "url": "https://github.com/Jayfrown/ldap.git",
+                "reference": "57a92167ef10eb224c86ff39b92d9f68b7bda0db"
             },
             "require": {
                 "ext-ldap": "*",
-                "php": ">=8.0.2",
+                "php": ">=8.1",
                 "symfony/options-resolver": "^5.4|^6.0"
             },
             "conflict": {
@@ -4246,7 +4240,6 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4266,24 +4259,7 @@
                 "active directory",
                 "ldap"
             ],
-            "support": {
-                "source": "https://github.com/symfony/ldap/tree/v6.0.5"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-02-11T14:36:50+00:00"
+            "time": "2022-03-23T00:52:39+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -7976,7 +7952,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "symfony/ldap": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
