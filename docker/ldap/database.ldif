@@ -1,0 +1,39 @@
+dn: ou=Groups,dc=example,dc=org
+ou: Groups
+objectClass: organizationalUnit
+objectClass: top
+
+dn: ou=Users,dc=example,dc=org
+ou: Users
+objectClass: organizationalUnit
+objectClass: top
+
+dn: ou=OtherUsers,dc=example,dc=org
+objectClass: organizationalUnit
+objectClass: top
+ou: OtherUsers
+
+dn: cn=Admin,ou=Groups,dc=example,dc=org
+cn: Admin
+gidNumber: 500
+memberUid: testuser
+objectClass: posixGroup
+objectClass: top
+
+dn: uid=testuser,ou=Users,dc=example,dc=org
+cn: Test User
+givenName: Test
+objectClass: inetOrgPerson
+objectClass: top
+userPassword:: e1NTSEF9WGNOTnNVdjd0NTQyaFZYMlNKMUcrcWd0a005TEpobVc=
+sn: User
+uid: testuser
+
+dn: uid=otheruser,ou=OtherUsers,dc=example,dc=org
+cn: Other Test User
+givenName: Other Test
+objectClass: inetOrgPerson
+objectClass: top
+userPassword:: e1NTSEF9K2k2czd0N2wwanVmcUhET3NONnFuZXpLd2s5bitNMm4=
+sn: User
+uid: otheruser
