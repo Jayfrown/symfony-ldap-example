@@ -23,7 +23,10 @@ security:
             provider: app_ldap
             form_login_ldap:
                 service: Symfony\Component\Ldap\Ldap
-                dn_string: 'uid={username},%env(resolve:LDAP_BASE_DN)%'
+                dn_string: '%env(resolve:LDAP_BASE_DN)%'
+                query_string: '(&(uid={username}))'
+                search_dn: '%env(resolve:LDAP_SEARCH_DN)%'
+                search_password: '%env(resolve:LDAP_SEARCH_PASSWORD)%'
                 check_path: app_login
                 require_previous_session: false
             logout:
